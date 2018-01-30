@@ -147,12 +147,14 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form method="post" action="contato.php">
+                <form method="post" action="contato.php" id="form_contato">
                     <div class="modal-body">
+                        <ul id= "mensagens_contato" style="color: red;"></ul>
                         <input type="hidden" value="sugestão" name="tipo">
                         <label>Motivo do contato:</label>
                         <select class="form-control" name="motivo">
-                            <option>Serviço</option>
+                            <option>Selecione...</option>
+                            <option>Serviço</option>                            
                             <option>Dúvida</option>
                             <option>Sugestão</option>
                             <option>Reclamação</option>
@@ -170,7 +172,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;">Enviar</button>
+                        <button type="submit" id="botao_contato" class="btn btn-primary" style="background-color: #271e33;">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -186,12 +188,13 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form method="post" action="send.php">
+                <form method="post" action="send.php" id="form_pedido">
                     <div class="modal-body">
+                        <ul id= "mensagens_pedido" style="color: red;"></ul>
                         <input type="hidden" value="fast" name="tipo">
                         <h5>Serviço sujeito à avaliação de distância</h5>
                         <label>CEP:</label>
-                        <input type="text" class="form-control" placeholder="Digite seu CEP...">
+                        <input type="text" class="form-control" placeholder="Digite seu CEP..." name="cep">
                         <label>Nome:</label>
                         <input type="text" class="form-control" placeholder="Escreva seu nome..." name="nome">
                         <label>E-mail:</label>
@@ -203,7 +206,7 @@
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;">Enviar</button>
+                        <button type="submit" id="botao_pedido" class="btn btn-primary" style="background-color: #271e33;">Enviar</button>
                     </div>
                 </form>
             </div>
@@ -219,31 +222,39 @@
                     <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
-                <form method="post" action="send.php">
+                <!-- Formulário de acesso -->
+                <form method="post" action="send.php" id="form_acesso">
                     <div class="modal-body">
+                        <ul id= "mensagens_acesso" style="color: red;"></ul>
                         <h5>Faça seu login:</h5>
                         <input type="hidden" value="serviços" name="tipo">
                         <label>E-mail</label>
                         <input type="text" class="form-control" placeholder="Digite seu e-mail..." name="email">
                         <label>Senha:</label>
                         <input type="password" class="form-control" placeholder="Digite sua senha..." name="senha"><br>
-                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;">Acessar</button><hr>
+                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;" id="botao_acesso">Acessar</button><hr>
+                </form>
+                <!-- Formulário de cadastro -->
+                <form method="post" action="solicitacao.php" id="form_cadastro">
+                        <ul id= "mensagens_cadastro" style="color: red;"></ul>
                         <h5>Ou faça seu cadastro:</h5>
                         <label>Nome:</label>
                         <input type="text" class="form-control" placeholder="Escreva seu nome..." name="nome">
                         <label>E-mail:</label>
                         <input type="text" class="form-control" placeholder="Digite seu e-mail..." name="email">
-                        <label>Telefone></label>
+                        <label>Telefone:</label>
                         <input type="text" class="form-control" placeholder="Escreva seu telefone para contato..." name="telefone">
                         <label>Senha:</label>
-                        <input type="password" class="form-control" placeholder="Digite sua Senha">
+                        <input type="password" class="form-control" placeholder="Digite sua Senha" name="senha">
                         <label>Confirme sua Senha:</label>
-                        <input type="password" class="form-control" placeholder="Confirme sua Senha" name="senha"><br>
-                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;">Cadastrar</button>
+                        <input type="password" class="form-control" placeholder="Confirme sua Senha" name="confirma_senha"><br>
+                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;" id="botao_cadastro">Cadastrar</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    
+    <script src="scripts/validacao.js"></script>
 </body>
 </html>
