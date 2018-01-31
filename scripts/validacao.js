@@ -20,17 +20,17 @@ botao_contato.addEventListener("click", function(event) {
     
     if (contato.motivo == 0)
     {
-        erros.push("Informe o motivo de contato");
+        erros.push("Informe o motivo do contato");
     }
     
-    if (contato.empresa.length == 0)
+    /*if (contato.empresa.length == 0)
     {
-        erros.push("O campo empresa não pode ser vázio");
-    }
+        erros.push("O campo empresa não pode ficar em branco");
+    }*/
     
     if (contato.mensagem.length == 0)
     {
-        erros.push("O campo mensagem não pode ser vázio");
+        erros.push("O campo mensagem não pode ficar em branco");
     }
     
     if (erros.length > 0)
@@ -74,7 +74,7 @@ botao_pedido.addEventListener("click", function(event) {
     
     if (pedido.problema.length == 0)
     {
-        erros.push("O campo problema não pode ser vázio");
+        erros.push("O campo problema não pode ficar em branco");
     }
     
     if (erros.length > 0)
@@ -111,7 +111,7 @@ botao_acesso.addEventListener("click", function(event) {
     
     if (acesso.email.length < 13)
     {
-        erros.push("Informe um e-mail valido");
+        erros.push("Informe um e-mail válido");
     }
     
     if (acesso.senha.length < 8)
