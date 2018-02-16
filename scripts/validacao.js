@@ -23,10 +23,10 @@ botao_contato.addEventListener("click", function(event) {
         erros.push("Informe o motivo do contato");
     }
     
-    /*if (contato.empresa.length == 0)
+    if (contato.empresa.length == 0)
     {
         erros.push("O campo empresa não pode ficar em branco");
-    }*/
+    }
     
     if (contato.mensagem.length == 0)
     {

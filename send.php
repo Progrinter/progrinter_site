@@ -12,5 +12,4 @@
     //echo $message;
     mail($to, $subject, $message, $headers);
     header("Location:index.html");
-
 ?>
