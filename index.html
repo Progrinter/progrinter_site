@@ -1,294 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <title>Progrinter - Design e Desenvolvimento</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Progrinter - Design e Desenvolvimento</title>
     <meta name="keywords" content="Progrinter, progrinter, site, design, programacao, aplicativos, desenvolvimento, programação, suporte, redes sociais">
-    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon"/>
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js"></script>
+    <link href="https://unpkg.com/ionicons@4.4.2/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-md fundoMenu">
-        <a class="navbar-brand" href="#">
-            Progrinter
-        </a>
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="progrinter.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Serviços
-                </a>
-                <div class="dropdown-menu fundoMenu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#fast" data-toggle="modal">Pedido Rápido</a>
-                    <a class="dropdown-item" href="#serviços" data-toggle="modal">Solicitação de Serviços</a>
-                    <!--<a class="dropdown-item" href="#">Avaliação de Problema</a>-->
-                </div>
-            </li>
-            <li class="nav-item">
-                <a class="nav-item nav-link" href="#contato" data-toggle="modal">Contato</a>
-            </li>
-        </ul>
-    </nav>      
-    <!-- Primeira divisão de conteúdo -->
-    <div class="container-fluid fundoHardware">
-        <br>
-        <div class="row">
-            <div class="col-md-3">&nbsp;</div>
-            <div class="col-md-6 fundoDiv text-justify" style="color:white; font-size:1.3em; text-indent: 2%;">
-                <p>A Progrinter é uma empresa voltada para a solução e inovação, oferecendo diversos serviços com
-                    o objetivo de proporcionar facilidade otimização para seus clientes em Hardware, Software e infraestrutura.
-                </p>
+    <div class="container-fluid fundo-index">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-md fundo-menu collapse navbar-collapse">
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="images/logo.png" alt="logo">
+            </a>
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="icon ion-md-menu"></i>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar-menu" style="margin-top:-9px;">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-item nav-link padding-link" style="padding-right:4.5rem;" href="#" >Início <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link padding-link" style="padding-right:4.5rem;" href="portfolio.html">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link padding-link" style="padding-right:4.5rem;" href="contato.html">Contato</a>
+                    </li>
+                </ul>
             </div>
-            <div class="col-md-3">&nbsp;</div>
-        </div><br>
-        <div class="row text-center" style="color:white; font-size:1.3em">
-            <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-2">
-                <a href="#manutencao">
-                    <img src="images/imagens_icones/ferramenta.png" alt="Manutenção" class="img-fluid">
-                </a>
+        </nav>
+        <!-- Conteúdo-->
+        <div class="row padding-row">
+            <div class="col-md-6 text-center">
+                <img class="img-description" src="images/imagens_icones/midias_sociais.png" alt="Midias Sociais">
             </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-2">
-                <img src="images/imagens_icones/impressora.png" alt="impressora" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-2">
-                <img src="images/imagens_icones/redes.png" alt="redes" class="img-fluid">
-            </div>
-        </div><br>
-        <div class="row text-center" style="color:white; font-size:1.3em">
-            <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-2">
-                <a href="#midias_sociais">
-                    <img src="images/imagens_icones/midias_sociais.png" alt="Manutenção" class="img-fluid">
-                </a>
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-2">
-                <img src="images/imagens_icones/seguranca.png" alt="Manutenção" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-2">
-                <img src="images/imagens_icones/sites.png" alt="Manutenção" class="img-fluid">
-            </div>
-        </div><br>
-    </div>
-    <!-- Segunda divisão de conteúdo -->
-    <div class="container-fluid fundoInfra" id="manutencao">
-        <br>
-        <div class="row text-center" style="color:white; font-size:1.3em">
-            <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/imagens_icones/caixa_ferramenta.png" alt="manutenção" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/descricao_icones/manutençao.png" alt="descricao_manutencao" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-        </div>
-        <br>
-    </div>
-    <!-- Terceira divisão de conteúdo -->
-    <div class="container-fluid fundoSites">
-        <br>
-        <div class="row text-center" style="color:white; font-size:1.3em">
-            <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/imagens_icones/site.png" alt="Mídias Sociais" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/descricao_icones/sites.png" alt="descricao_midiais_sociais" class="img-fluid">
-            </div>
-            <div class="col-md-1">&nbsp;</div>
-        </div>
-        <br>
-    </div>
-    <!-- Quarta divisão de conteúdo -->
-    <div class="container-fluid fundoServer">
-        <br>
-        <div class="row text-center" style="color:white; font-size:1.3em">
-            <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/imagens_icones/rede_nuvem.png" alt="Mídias Sociais" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/descricao_icones/redes.png" alt="descricao_midiais_sociais" class="img-fluid">
-            </div>
-            <div class="col-md-1">&nbsp;</div>
-        </div>
-        <br>
-    </div>
-    <!-- Quinta divisão de conteúdo -->
-    <div class="container-fluid fundoSoft">
-        <br>
-        <div class="row text-center" style="color:white; font-size:1.3em">
-            <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/imagens_icones/segurança(1).png" alt="Mídias Sociais" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/descricao_icones/segurança.png" alt="descricao_midiais_sociais" class="img-fluid">
-            </div>
-            <div class="col-md-1">&nbsp;</div>
-        </div>
-        <br>
-    </div>
-    <!-- Sexta divisão de conteúdo -->
-    <div class="container-fluid fundoCelulares" id="midias_sociais">
-        <br>
-        <div class="row text-center" style="color:white; font-size:1.3em">
-            <div class="col-md-1">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/imagens_icones/midias_sociais(1).png" alt="Mídias Sociais" class="img-fluid">
-            </div>
-            <div class="col-md-2">&nbsp;</div>
-            <div class="col-md-4">
-                <img src="images/descricao_icones/midias_sociais.png" alt="descricao_midiais_sociais" class="img-fluid">
-            </div>
-            <div class="col-md-1">&nbsp;</div>
-        </div>
-        <br>
-    </div>
-    <!-- rodapé com informações de contato -->
-    <footer class="footer fundoMenu">
-        <div class="container text-left">
-            <h7>Contato direto: contato@progrinter.com</h7><br>
-            <h7>(11) 94824-5488 (Paulo Henrique)</h7><br>
-            <h7>© Progrinter 2018</h7>
-        </div>
-    </footer>
-    <!-- Layout do modal de contato -->
-    <div class="modal" tabindex="0" role="dialog" id="contato">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content fundoModal">
-                <div class="modal-header">
-                    <h5 class="modal-title">Entre em Contato</h5>
-                    <button type="text" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form method="post" action="contato.php" id="form_contato">
-                    <div class="modal-body">
-                        <ul id= "mensagens_contato" style="color: red;"></ul>
-                        <input type="hidden" value="sugestão" name="tipo">
-                        <label>Motivo do contato:</label>
-                        <select class="form-control" name="motivo">
-                            <option>Selecione...</option>
-                            <option>Serviço</option>                            
-                            <option>Dúvida</option>
-                            <option>Sugestão</option>
-                            <option>Reclamação</option>
-                        </select>
-                        <label>Nome:</label>
-                        <input type="text" class="form-control" placeholder="Escreva seu nome..." name="nome">
-                        <label>Empresa</label>
-                        <input type="text" class="form-control" placeholder="Digite o nome da empresa" name="empresa">
-                        <label>E-mail:</label>
-                        <input type="text" class="form-control" placeholder="Digite seu e-mail..." name="email">
-                        <label>Telefone</label>
-                        <input type="text" class="form-control" placeholder="(xx)xxxx-xxxx" name="telefone">
-                        <label>Mensagem</label>
-                        <textarea class="form-control" cols="10" rows="3" name="mensagem"></textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" id="botao_contato" class="btn btn-primary" style="background-color: #271e33;">Enviar</button>
-                    </div>
-                </form>
+            <div class="col-md-6 text-center">
+                <img class="img-description" src="images/imagens_icones/sites.png" alt="Midias Sociais">
             </div>
         </div>
-    </div>
-    <!-- Layout do modal de pedidos rapidos -->
-    <div class="modal" tabindex="0" role="dialog" id="fast">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content fundoModal">
-                <div class="modal-header">
-                    <h5 class="modal-title">Pedidos Rápidos</h5>
-                    <button type="text" class="close" data-dismiss="modal" aria-label="Close" style="color:white">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <form method="post" action="send.php" id="form_pedido">
-                    <div class="modal-body">
-                        <ul id= "mensagens_pedido" style="color: red;"></ul>
-                        <input type="hidden" value="fast" name="tipo">
-                        <h5>Serviço sujeito à avaliação de distância</h5>
-                        <label>CEP:</label>
-                        <input type="text" class="form-control" placeholder="Digite seu CEP..." name="cep">
-                        <label>Nome:</label>
-                        <input type="text" class="form-control" placeholder="Escreva seu nome..." name="nome">
-                        <label>E-mail:</label>
-                        <input type="text" class="form-control" placeholder="Digite seu e-mail..." name="email">
-                        <label>Telefone</label>
-                        <input type="text" class="form-control" placeholder="(xx)xxxx-xxxx" name="telefone">
-                        <label>Problema</label>
-                        <textarea class="form-control" cols="10" rows="3" name="mensagem" placeholder="Escreva o que está ocorrendo"></textarea>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                        <button type="submit" id="botao_pedido" class="btn btn-primary" style="background-color: #271e33;">Enviar</button>
-                    </div>
-                </form>
+        <footer class="container text-right text-justify footer">
+                <p>contato@progrinter.com</p>
+                <p>(11) 94824-5488 (Paulo Henrique)</p>
+                <p>© Progrinter 2018</p>
             </div>
-        </div>
+        </footer>
     </div>
-    <!-- Layout do modal de solicitação de serviços -->
-    <div class="modal" tabindex="0" role="dialog" id="serviços">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content fundoModal">
-                <div class="modal-header">
-                    <h5 class="modal-title">Solicitação de Serviços</h5>
-                    <button type="text" class="close" data-dismiss="modal" aria-label="Close" style="color:white">
-                    <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <!-- Formulário de acesso -->
-                <form method="post" action="send.php" id="form_acesso">
-                    <div class="modal-body">
-                        <ul id= "mensagens_acesso" style="color: red;"></ul>
-                        <h5>Faça seu login:</h5>
-                        <input type="hidden" value="serviços" name="tipo">
-                        <label>E-mail</label>
-                        <input type="text" class="form-control" placeholder="Digite seu e-mail..." name="email">
-                        <label>Senha:</label>
-                        <input type="password" class="form-control" placeholder="Digite sua senha..." name="senha"><br>
-                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;" id="botao_acesso">Acessar</button><hr>
-                </form>
-                <!-- Formulário de cadastro -->
-                <form method="post" action="solicitacao.php" id="form_cadastro">
-                        <ul id= "mensagens_cadastro" style="color: red;"></ul>
-                        <h5>Ou faça seu cadastro:</h5>
-                        <label>Nome:</label>
-                        <input type="text" class="form-control" placeholder="Escreva seu nome..." name="nome">
-                        <label>E-mail:</label>
-                        <input type="text" class="form-control" placeholder="Digite seu e-mail..." name="email">
-                        <label>Telefone:</label>
-                        <input type="text" class="form-control" placeholder="Escreva seu telefone para contato..." name="telefone">
-                        <label>Senha:</label>
-                        <input type="password" class="form-control" placeholder="Digite sua Senha" name="senha">
-                        <label>Confirme sua Senha:</label>
-                        <input type="password" class="form-control" placeholder="Confirme sua Senha" name="confirma_senha"><br>
-                        <button type="submit" class="btn btn-primary" style="background-color: #271e33;" id="botao_cadastro">Cadastrar</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-    
-    <script src="scripts/validacao.js"></script>
 </body>
 </html>

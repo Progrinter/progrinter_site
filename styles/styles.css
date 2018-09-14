@@ -1,19 +1,20 @@
-.fundoHardware {
-    background: url('../images/editados/contato.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.fundo-index {
+    background-image: url('../images/editados/contato.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    border-bottom: solid 3px #271e33;
+    height:100vh;
 }
 
-.fundoInfra {
-    background: url('../images/editados/menu.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    border-bottom: solid 3px #271e33;
+.ion-md-menu {
+    font-size: 3rem;
+    color: white;
+}
+
+.logo {
+    width: 120px;
+    height: 100px;
+    margin-left: 17px;
 }
 
 .fundoCelulares {
@@ -22,25 +23,7 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border-bottom: solid 3px #271e33;
-}
-
-.fundoSoft {
-    background: url('../images/editados/menu.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    border-bottom: solid 3px #271e33;
-}
-
-.fundoServer {
-    background: url('../images/editados/redes.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    border-bottom: solid 3px #271e33;
+    height:100vh
 }
 
 .fundoSites {
@@ -49,25 +32,46 @@
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    border-bottom: solid 3px #271e33;
+    height:100vh
 }
 
-.fundoDiv {
-    background-color:#271e33; opacity: 0.7;
-    filter: alpha(opacity=50);
-}
-
-.fundoModal {
-    background-color:#271e33; opacity: 0.9;
-    filter: alpha(opacity=50);
+.fundo-menu a {
     color: white;
+    font-weight: bold;
+    font-size: 25px;
 }
 
-.fundoMenu {
-    background-color: #271e33;
-    color:white;
+.padding-link {
+    padding-right: 4.5rem;
 }
 
-.fundoMenu a {
+.img-description {
+    height: 16em;
+}
+
+.padding-row{
+    padding-top: 3em;
+}
+
+.footer{
     color: white;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 3px;
+    padding-top: 6em;
+}
+
+@media screen and (max-width: 560px){
+    .img-description{
+        height: 10em;
+    }
+}
+
+@media screen and (max-height:568px){
+    .footer{
+        padding-top: 4em;
+    }
+    .padding-row{
+        padding-top: 0;
+    }
 }
