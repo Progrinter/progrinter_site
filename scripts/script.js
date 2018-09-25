@@ -1,7 +1,6 @@
 titulo = document.getElementsByTagName('title')[0].text;
 tituloComp = "Progrinter - Sites";
 tagA = document.getElementsByClassName('nav-item nav-link padding-link');
-console.log(tagA);
 
 if(titulo == tituloComp)
     for(i = 0;i < tagA.length; i++)
