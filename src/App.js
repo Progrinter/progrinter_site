@@ -8,6 +8,7 @@ import Contact from './components/Contact';
 
 class App extends Component {
   render() {
+    document.title = "Progrinter - Desenvolvimento de Sites e Aplicativos"
     return (
       <BrowserRouter>
         <div className="App">
