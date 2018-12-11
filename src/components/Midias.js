@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from './Header';
-import Footer from './Footer';
 
 const Midias = props => {
     return(
         <div class="container-fluid fundo-midias">
-            <Header />
+            <div style={{height: 140}}></div>
             <div className='row padding-row'>
                 <div className='col-md-6 text-center'>
                     <img className='img-description' src='images/imagens_icones/midias.png' alt='Midias' />
@@ -14,7 +12,6 @@ const Midias = props => {
                     <img className='img-description' src='images/descricao_icones/midias.png' alt='Midias' />
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

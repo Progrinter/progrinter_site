@@ -1,11 +1,9 @@
 import React from 'react'
-import Header from './Header'
-import Footer from './Footer';
 
 const Sites = props => {
     return(
         <div class="container-fluid fundo-sites">
-            <Header />
+            <div style={{height: 140}}></div>
             <div className='row padding-row'>
                 <div className='col-md-6 text-center'>
                     <img className='img-description' src='images/imagens_icones/site.png' alt='Sites' />
@@ -14,7 +12,6 @@ const Sites = props => {
                     <img className='img-description' src='images/descricao_icones/sites.png' alt='Sites' />
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }

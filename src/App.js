@@ -12,10 +12,21 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div className="App">
-          <Route path='/' exact component={Index} />
+          {/* <Route path='/' exact component={Index} />
           <Route path='/sites' component={Sites} />
           <Route path='/midias' component={Midias} />
-          <Route path='/contato' component={Contact} />
+          <Route path='/contato' component={Contact} /> */}
+          <Route path='/webmail' component={() => window.location = 'http://webmail.progrinter.com/'} />
+          <Index />
+          <div id='sites'>
+            <Sites />
+          </div>
+          <div id='midias'>
+            <Midias />
+          </div>
+          <div id='contato'>
+            <Contact />
+          </div>
         </div>
       </BrowserRouter>
     );

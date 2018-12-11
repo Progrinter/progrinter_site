@@ -1,5 +1,6 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+//import {Link} from 'react-router-dom'
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Header = props => {
     return(
@@ -16,10 +17,10 @@ const Header = props => {
                         <Link className='nav-item nav-link padding-link' style={{paddingRight:4.5+'rem'}} to='/' >Início <span className='sr-only'>(current)</span></Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-item nav-link padding-link' style={{paddingRight:4.5+'rem'}} to='portfolio.html'>Portfólio</Link>
+                        <Link className='nav-item nav-link padding-link' style={{paddingRight:4.5+'rem'}} to='/#sites'>Portfólio</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link className='nav-item nav-link padding-link' style={{paddingRight:4.5+'rem'}} to='/contato'>Contato</Link>
+                        <Link className='nav-item nav-link padding-link' style={{paddingRight:4.5+'rem'}} to='/#contato'>Contato</Link>
                     </li>
                 </ul>
             </div>

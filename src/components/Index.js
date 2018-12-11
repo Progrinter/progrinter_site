@@ -1,6 +1,6 @@
 import React from 'react'
-import Header from './Header';
-import Footer from './Footer';
+import Header from './Header'
+import { HashLink as Link } from 'react-router-hash-link'
 
 const Index = props => {
     return(
@@ -8,17 +8,16 @@ const Index = props => {
             <Header />
             <div className='row padding-row'>
                 <div className='col-md-6 text-center'>
-                    <a href='/midias'>
+                    <Link to='/#sites'>
                         <img className='img-description' src='images/imagens_icones/midias_sociais.png' alt='Midias Sociais' />
-                    </a>
+                    </Link>
                 </div>
                 <div className='col-md-6 text-center'>
-                    <a href='/sites'>
+                    <Link to='/#midias'>
                         <img className='img-description' src='images/imagens_icones/sites.png' alt='Midias Sociais' />
-                    </a>
+                    </Link>
                 </div>
             </div>
-            <Footer />
         </div>
     )
 }
